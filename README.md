@@ -6,11 +6,11 @@ Operating system used here : Ubuntu 20.04.3 LTS
 
 ### Adding a data type
 
-Default ros2_interface does not include some data types like Twist. You need to specify it in interfaces.txt and rebuild. 
+Default ros2_interface does not include some data types like 'Twist'. You need to specify it in interfaces.txt and rebuild. 
 
 1) Go to CoppeliaSim default directory and this folder CoppeliaSim/programming/ros2_packages/sim_ros2_interface/meta  
-2) Open interfaces.txt and include your required data type. 
-3) You may need to install the following packages.
+2) Open interfaces.txt and include your required data type. Add `geomtery_msgs/msg/Twist`
+3) You may need to install the following plugins for building this package.
 
 ```
 pip install xmlschema
@@ -30,7 +30,7 @@ colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release -DLIBPLUG
 
 1) Open coppeliasim by `./coppeliaSim.sh` in default directory of CoppeliaSim, or by shortcuts.
 2) Drag and Drop the .ttt file in this repo, or by 'Open Scene'
-3) Lua script is attached to the bot. Understand the code, this bot subscribes to topic created by keyboard node. (many functions of simROS are deprecated)
+3) Lua script is attached to the bot. Understand the code, this bot subscribes to topic created by keyboard node. (many functions of simROS (ROS1) are deprecated)
 4) If you have ROS2 installed, ROS2 plugin have already loaded when coppelia is launched (you can see it in terminal)
 5) "/sim_ros2_interface" node is automatically created. Check by `ros2 node list`
 
