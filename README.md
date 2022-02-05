@@ -1,10 +1,10 @@
 # Coppelia-ROS2-Integration
 
-##Setting up Coppelia - ROS2
+## Setting up Coppelia - ROS2
 
 Operating system used here : Ubuntu 20.04.3 LTS
 
-###Adding a data type
+### Adding a data type
 
 Default ros2_interface does not include some data types like Twist. You need to specify it in interfaces.txt and rebuild. 
 
@@ -26,7 +26,7 @@ ulimit -s unlimited #otherwise compilation might freeze/crash
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release -DLIBPLUGIN_DIR=$COPPELIASIM_ROOT_DIR/programming/libPlugin
 ```
 
-##Lua script in CoppeliaSim
+## Lua script in CoppeliaSim
 
 1) Open coppeliasim by `./coppeliaSim.sh` in default directory of CoppeliaSim, or by shortcuts.
 2) Drag and Drop the .ttt file in this repo, or by 'Open Scene'
