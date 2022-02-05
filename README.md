@@ -56,8 +56,11 @@ ros2 run teleop_twist_keyboard  teleop_twist_keyboard
 5) Control the bot with following buttons
 
 > u i o
+> 
 > j k l
+> 
 > m , .
 
 ### Refer the video below about 'CoppeliaSim - ROS1' integration. It may help. Be aware of deprecated functons and other changes. 
 
+https://www.youtube.com/watch?v=v3IyN6lRG5A&t=1150s
