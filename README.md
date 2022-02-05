@@ -26,7 +26,7 @@ ulimit -s unlimited #otherwise compilation might freeze/crash
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release -DLIBPLUGIN_DIR=$COPPELIASIM_ROOT_DIR/programming/libPlugin
 ```
 
-## Lua script in CoppeliaSim
+### Lua script in CoppeliaSim
 
 1) Open coppeliasim by `./coppeliaSim.sh` in default directory of CoppeliaSim, or by shortcuts.
 2) Drag and Drop the .ttt file in this repo, or by 'Open Scene'
@@ -34,7 +34,7 @@ colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release -DLIBPLUG
 4) If you have ROS2 installed, ROS2 plugin have already loaded when coppelia is launched (you can see it in terminal)
 5) "/sim_ros2_interface" node is automatically created. Check by `ros2 node list`
 
-## Install Teleop_twist_keyboard
+### Install Teleop_twist_keyboard
 
 replace with your ros-version
 eg: sudo apt-get install ros-foxy-teleop-twist-keyboard
@@ -43,7 +43,7 @@ eg: sudo apt-get install ros-foxy-teleop-twist-keyboard
 sudo apt-get install ros-<ros-version>-teleop-twist-keyboard
 ```
 
-## Launch ROS2 and start simulation
+### Launch ROS2 and start simulation
 
 1) Open different terminal
 2) Run keyboard node
@@ -61,6 +61,6 @@ ros2 run teleop_twist_keyboard  teleop_twist_keyboard
 > 
 > m , .
 
-### Refer the video below about 'CoppeliaSim - ROS1' integration. It may help. Be aware of deprecated functons and other changes. 
+#### Refer the video below about 'CoppeliaSim - ROS1' integration. It may help. Be aware of deprecated functons and other changes. 
 
 https://www.youtube.com/watch?v=v3IyN6lRG5A&t=1150s
